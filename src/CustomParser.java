@@ -39,28 +39,3 @@ class CustomParser {
         }
     }
 }
-
-//class CustomParser(HTMLParser):
-//
-//    writeDataToFile = False
-//    file = None
-//
-//    def __init__(self, file):
-//        super().__init__()
-//        self.file = file
-//
-//    def handle_starttag(self, tag, attrs):
-//        result = None
-//        for attr_name, attr_value in attrs:
-//            if attr_name == "class":
-//                result = attr_value
-//        if tag == "div" and result == "vmede-generator":
-//            self.writeDataToFile=True
-//
-//    def handle_endtag(self, tag):
-//        if tag == "div" and self.writeDataToFile:
-//            self.writeDataToFile=False
-//
-//    def handle_data(self, data):
-//        if self.writeDataToFile:
-//            file.write(data)
