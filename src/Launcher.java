@@ -7,7 +7,7 @@ public class Launcher {
         final String URL_START = "http://vmede.org/sait/?page=";
         for (int x = 1; x < 10; x++) {
             final String URL_END = "&id=Anatomija_sapin_"+x+"&menu=Anatomija_sapin_2007/";
-            final String fileName = "vmede_page_"+x+".txt";
+            final String fileName = "bookPart_"+x+".txt";
 
             try (PrintWriter pw = new PrintWriter(fileName)) {
                 System.out.print("Downloading pages.. ");
